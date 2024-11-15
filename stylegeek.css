@@ -1,0 +1,49 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* Container ocupa 100% da largura e altura da tela */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease;
+}
+
+/* Estilo para as seções dentro do container */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cle); /* Defina a variável --cle em :root */
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 4em;
+}

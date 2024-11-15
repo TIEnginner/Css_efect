@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scrolling</title>
+    <link type="text/css" rel="stylesheet" href="stylegeek.css">
+</head>
+<body>
+    <div class="container">
+        <section style="--cle: #004ffa;">
+            <div class="content">
+                <h2>Seção Um</h2>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section style="--cle: #16c000;">
+            <div class="content">
+                <h2>Seção Dois</h2>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section style="--cle: #d5ff1c;">
+            <div class="content">
+                <h2>Seção Três</h2>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section style="--cle: #52009e;">
+            <div class="content">
+                <h2>Seção Quatro</h2>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section style="--cle: #f10000;">
+            <div class="content">
+                <h2>Seção Cinco</h2>
+            </div>
+        </section>
+    </div>
+    <script>
+        window.addEventListener('scroll', function(){
+            let scrollY = window.scrollY;
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            let percentScrolled = (scrollY / totalHeight) * 100;
+            let translateX = (percentScrolled/5) * -4;
+            document.querySelector('.container').style.transform = `translateX(-${translateX}px)`;
+        });
+    </script>
+</body>
+</html>
