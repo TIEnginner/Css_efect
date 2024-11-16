@@ -32,11 +32,9 @@ section {
     color: white;
     text-align: center;
 }
-
 h2 {
     font-size: 3rem;
 }
-
 .content {
     position: relative;
     display: flex;
